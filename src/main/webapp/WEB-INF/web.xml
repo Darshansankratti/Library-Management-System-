@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>LibraryManagement</display-name>
+  <servlet>
+  <servlet-name>book1</servlet-name>
+  <servlet-class>Servlet.CreateServlet</servlet-class>
+  <init-param>
+  <param-name>url</param-name>
+  <param-value>jdbc:mysql://localhost:3306/darshan</param-value>
+  </init-param>
+  <init-param>
+  <param-name>username</param-name>
+  <param-value>root</param-value>
+  </init-param>
+  <init-param>
+  <param-name>pwd</param-name>
+  <param-value>root</param-value>
+  </init-param>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>book1</servlet-name>
+  <url-pattern>/create</url-pattern>
+  </servlet-mapping>
+  
+  <context-param>
+  <param-name>url</param-name>
+  <param-value>jdbc:mysql://localhost:3306/darshan</param-value>
+  </context-param>
+  <context-param>
+  <param-name>username</param-name>
+  <param-value>root</param-value>
+  </context-param>
+  <context-param>
+  <param-name>pwd</param-name>
+  <param-value>root</param-value>
+  </context-param>
+  
+  <servlet>
+  <servlet-name>book2</servlet-name>
+  <servlet-class>Servlet.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>book2</servlet-name>
+  <url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>book3</servlet-name>
+  <servlet-class>Servlet.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>book3</servlet-name>
+  <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>book4</servlet-name>
+  <servlet-class>Servlet.GetServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>book4</servlet-name>
+  <url-pattern>/get</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>book5</servlet-name>
+  <servlet-class>Servlet.GetAllServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>book5</servlet-name>
+  <url-pattern>/getall</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
