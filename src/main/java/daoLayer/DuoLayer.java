@@ -18,7 +18,7 @@ import Model.DbDetails;
 public class DuoLayer {
 	String username = "root";
 	String pwd = "root";
-	String url = "jdbc:mysql://localhost:3306/darshan";
+	String url = "	";
 	String insqry = "insert into Book(name,author,price,qty) values(?,?,?,?)";
 	String upqry = "update Book set name=?,author=?,price=?,qty=? where bookid=?";
 	String dltqry = "Delete from book where bookid=?";

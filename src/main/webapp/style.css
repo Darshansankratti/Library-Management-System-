@@ -1,0 +1,21 @@
+@charset "UTF-8";
+body{
+	background-image: url('images/Library.jpg');
+	background-size:cover;
+	background-position:center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+} 
+ body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Horizontally center */
+            align-items: center;    /* Vertically center */
+        }
+
+ .center-div {
+            width: 600px;
+            height: 200px;
+            background-color: lightblue;
+        }
